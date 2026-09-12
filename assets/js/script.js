@@ -55,62 +55,46 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+// custom select variables - old filter system (removed from HTML)
+// const select = document.querySelector("[data-select]");
+// const selectItems = document.querySelectorAll("[data-select-item]");
+// const selectValue = document.querySelector("[data-selecct-value]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+// project tabs variables
+const projectTabs = document.querySelectorAll("[data-project-tab]");
+const projectItems = document.querySelectorAll("[data-project-item]");
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
-  });
-}
-
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
+// project tab switch function
+const switchProjectTab = function (tabName) {
+  // Remove active class from all tabs
+  for (let i = 0; i < projectTabs.length; i++) {
+    projectTabs[i].classList.remove("active");
   }
-
+  
+  // Add active class to clicked tab
+  for (let i = 0; i < projectTabs.length; i++) {
+    if (projectTabs[i].getAttribute("data-project-tab") === tabName) {
+      projectTabs[i].classList.add("active");
+    }
+  }
+  
+  // Show/hide projects based on selected tab
+  for (let i = 0; i < projectItems.length; i++) {
+    if (tabName === "all" || projectItems[i].getAttribute("data-project-category") === tabName) {
+      projectItems[i].classList.add("active");
+    } else {
+      projectItems[i].classList.remove("active");
+    }
+  }
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
+// add event listeners to all project tabs
+for (let i = 0; i < projectTabs.length; i++) {
+  projectTabs[i].addEventListener("click", function () {
+    switchProjectTab(this.getAttribute("data-project-tab"));
   });
-
 }
 
 
