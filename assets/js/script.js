@@ -115,6 +115,51 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 
+// certificate modal variables
+const certificateItems = document.querySelectorAll("[data-certificate-item]");
+const certModalContainer = document.querySelector("[data-cert-modal-container]");
+const certModalCloseBtn = document.querySelector("[data-cert-modal-close-btn]");
+const certOverlay = document.querySelector("[data-cert-overlay]");
+
+// cert modal content elements
+const certModalTitle = document.querySelector("[data-cert-modal-title]");
+const certModalOrg = document.querySelector("[data-cert-modal-org]");
+const certModalImg = document.querySelector("[data-cert-modal-img]");
+
+// cert modal toggle function
+const certModalToggle = function () {
+  certModalContainer.classList.toggle("active");
+  certOverlay.classList.toggle("active");
+}
+
+// add click event to all certificate items
+for (let i = 0; i < certificateItems.length; i++) {
+
+  certificateItems[i].addEventListener("click", function () {
+
+    const certTitle = this.getAttribute("data-cert-title");
+    const certOrg = this.getAttribute("data-cert-organization");
+    
+    certModalTitle.textContent = certTitle;
+    certModalOrg.textContent = certOrg;
+    
+    // construct image path based on certificate name
+    const imageName = certTitle.toLowerCase().replace(/\s+/g, '-') + '.jpg';
+    certModalImg.src = './assets/images/certificates/' + imageName;
+    certModalImg.alt = certTitle;
+
+    certModalToggle();
+
+  });
+
+}
+
+// add click event to certificate modal close button
+certModalCloseBtn.addEventListener("click", certModalToggle);
+certOverlay.addEventListener("click", certModalToggle);
+
+
+
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");

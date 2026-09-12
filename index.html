@@ -1,299 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banafshe Dehqan - Personal Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banafshe Dehqan - Personal Portfolio</title>
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <main>
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Banafshe Dehqan" width="80" />
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Banafshe Dehqan">Banafshe Dehqan</h1>
-          <p class="title">Web developer</p>
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Banafshe Dehqan"
+              width="80"
+            />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Banafshe Dehqan">Banafshe Dehqan</h1>
+            <p class="title">Front-end Developer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:bnfshedehqan@yahoo.com" class="contact-link">bnfshedehqan@yahoo.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+989358606958" class="contact-link">+989358606958</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1995-07-13">July 13, 1995</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Iran</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://twitter.com/BanafsheDehqan" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.instagram.com/banafshe_dehqan/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a dedicated and detail-oriented front-end developer with
-            extensive experience in building responsive and interactive
-            websites and web applications. My main expertise lies in
-            JavaScript, with a strong focus on frameworks like React.js and
-            Angular, where I have successfully developed high-performing user
-            interfaces.
-          </p>
-
-          <p>
-            Beyond my front-end skills, I have a foundational understanding of
-            Python, Machine Learning, Deep Learning, and NLP, which has
-            enriched my ability to collaborate on interdisciplinary projects.
-            Additionally, I am familiar with working with databases like
-            PostgreSQL, enhancing my capability to understand the full
-            spectrum of web development.
-          </p>
-          <p>
-            I am passionate about creating seamless and engaging digital
-            experiences and am constantly seeking new opportunities to learn
-            and grow in the ever-evolving field of web development. My goal is
-            to continue crafting high-quality, user-centered solutions that
-            make a real impact.
-          </p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40" />
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a
-                  professional level.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:bnfshedehqan@yahoo.com" class="contact-link"
+                  >bnfshedehqan@yahoo.com</a
+                >
               </div>
             </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+989358606958" class="contact-link"
+                  >+989358606958</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1995-07-13">July 13, 1995</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Iran</address>
               </div>
             </li>
           </ul>
-        </section>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://twitter.com/BanafsheDehqan" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/banafshe_dehqan/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
         <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a dedicated and detail-oriented front-end developer with
+              extensive experience in building responsive and interactive
+              websites and web applications. My main expertise lies in
+              JavaScript, with a strong focus on frameworks like React.js and
+              Angular, where I have successfully developed high-performing user
+              interfaces.
+            </p>
+
+            <p>
+              Beyond my front-end skills, I have a foundational understanding of
+              Python, Machine Learning, Deep Learning, and NLP, which has
+              enriched my ability to collaborate on interdisciplinary projects.
+              Additionally, I am familiar with working with databases like
+              PostgreSQL, enhancing my capability to understand the full
+              spectrum of web development.
+            </p>
+            <p>
+              I am passionate about creating seamless and engaging digital
+              experiences and am constantly seeking new opportunities to learn
+              and grow in the ever-evolving field of web development. My goal is
+              to continue crafting high-quality, user-centered solutions that
+              make a real impact.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </section>
-        </div>
-      </article>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
 
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Apadana University</h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Apadana University</h4>
+                <span>2015 — 2019</span>
 
-              <span>2015 — 2019</span>
+                <p class="timeline-text">
+                  Bachelor's degree - Computer Engineering -Softwere
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                Bachelor's degree - Computer Engineering -Softwere
-              </p>
-            </li>
-          </ol>
-        </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Certificates</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item" data-certificate-item data-cert-title="Prompt Engineering Workshop" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Prompt Engineering Workshop
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Developer</h4>
+                <span>Sep 2026</span>
 
-              <span>Mar 2020 - Present</span>
+                <p class="timeline-text">Shiraz University</p>
+              </li>
 
-              <p class="timeline-text">
-                Skills: React.js · Next.js · TypeScript · JavaScript ·
-                PostgreSQL · Tailwind CSS · WordPress · MySQL · Angular ·
-                SQLite · Machine Learning · Git · Bootstrap (Framework)
-              </p>
-            </li>
+              <li class="timeline-item" data-certificate-item data-cert-title="Machine Vision" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Machine Vision
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">AI Developer</h4>
+                <span>2026 — In Progress</span>
 
-              <span>Jun 2022 - Sep 2023</span>
+                <p class="timeline-text">Shiraz University</p>
+              </li>
 
-              <p class="timeline-text">
-                Skills: Natural Language Processing (NLP) · HTML5 · PostgreSQL
-                · Deep Learning · Css3 · MySQL · SQLite · Machine Vision · Git
-                · Bootstrap (Framework) · Python (Programming Language) · REST
-                APIs · Django · Machine Learning
-              </p>
-            </li>
+              <li class="timeline-item" data-certificate-item data-cert-title="Machine Learning" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Machine Learning
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Co-Founder</h4>
+                <span>2023</span>
 
-              <span>May 2019 - Feb 2020</span>
+                <p class="timeline-text">Shiraz University · 3 months</p>
+              </li>
 
-              <p class="timeline-text">
-                The startup was located in the Quantum Accelerator at Shiraz
-                University, and due to the conditions of COVID-19, our
-                business faced failure.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Programmer</h4>
+              <li class="timeline-item" data-certificate-item data-cert-title="Machine Learning" data-cert-organization="Iran Technical &amp; Vocational Training Organization">
+                <h4 class="h4 timeline-item-title">
+                  Machine Learning
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
 
-              <span>Apr 2019 - Oct 2019</span>
+                <span>2023</span>
 
-              <p class="timeline-text">
-                Skills: Angular · TypeScript · React.js · HTML · JavaScript ·
-                CSS · React Native · Git · Bootstrap (Framework)
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Programmer</h4>
+                <p class="timeline-text">
+                  Iran Technical &amp; Vocational Training Organization · 5 months
+                </p>
+              </li>
 
-              <span>Nov 2018- Mar 2019</span>
+              <li class="timeline-item" data-certificate-item data-cert-title="Python" data-cert-organization="Iran Technical &amp; Vocational Training Organization">
+                <h4 class="h4 timeline-item-title">
+                  Python
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
 
-              <p class="timeline-text">
-                Skills: jQuery · React.js · HTML · JavaScript · CSS · Git ·
-                Bootstrap (Framework)
-              </p>
-            </li>
-          </ol>
-        </section>
+                <span>2022</span>
 
-        <!-- <section class="skill">
+                <p class="timeline-text">
+                  Iran Technical &amp; Vocational Training Organization · 5 months
+                </p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Python" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Python
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2022</span>
+
+                <p class="timeline-text">Shiraz University · 1 month</p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Digital Marketing" data-cert-organization="Innovation and Entrepreneurship Center of Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Digital Marketing
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2019</span>
+
+                <p class="timeline-text">
+                  Innovation and Entrepreneurship Center of Shiraz University · 1 week
+                </p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Adobe Photoshop CC 2015" data-cert-organization="Iran Technical &amp; Vocational Training Organization">
+                <h4 class="h4 timeline-item-title">
+                  Adobe Photoshop CC 2015
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2018</span>
+
+                <p class="timeline-text">
+                  Iran Technical &amp; Vocational Training Organization · 5 months
+                </p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="LaTeX Workshop" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  LaTeX Workshop
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2017</span>
+
+                <p class="timeline-text">Shiraz University</p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Data Mining Workshop" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Data Mining Workshop
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2017</span>
+
+                <p class="timeline-text">Shiraz University</p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Cyber Security Workshop" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Cyber Security Workshop
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2017</span>
+
+                <p class="timeline-text">Shiraz University</p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="C# Programming" data-cert-organization="Shiraz Industrial Management">
+                <h4 class="h4 timeline-item-title">
+                  C# Programming
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2015</span>
+
+                <p class="timeline-text">Shiraz Industrial Management · 5 months</p>
+              </li>
+
+              <li class="timeline-item" data-certificate-item data-cert-title="Essay Writing" data-cert-organization="Shiraz University">
+                <h4 class="h4 timeline-item-title">
+                  Essay Writing
+                  <ion-icon name="image-outline" class="cert-icon"></ion-icon>
+                </h4>
+
+                <span>2014</span>
+
+                <p class="timeline-text">Shiraz University</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                <span>Mar 2020 - Present</span>
+
+                <p class="timeline-text">
+                  Skills: React.js · Next.js · TypeScript · JavaScript ·
+                  PostgreSQL · Tailwind CSS · WordPress · MySQL · Angular ·
+                  SQLite · Machine Learning · Git · Bootstrap (Framework)
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">AI Developer</h4>
+
+                <span>Jun 2022 - Sep 2023</span>
+
+                <p class="timeline-text">
+                  Skills: Natural Language Processing (NLP) · HTML5 · PostgreSQL
+                  · Deep Learning · Css3 · MySQL · SQLite · Machine Vision · Git
+                  · Bootstrap (Framework) · Python (Programming Language) · REST
+                  APIs · Django · Machine Learning
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Co-Founder</h4>
+
+                <span>May 2019 - Feb 2020</span>
+
+                <p class="timeline-text">
+                  The startup was located in the Quantum Accelerator at Shiraz
+                  University, and due to the conditions of COVID-19, our
+                  business faced failure.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Programmer</h4>
+
+                <span>Apr 2019 - Oct 2019</span>
+
+                <p class="timeline-text">
+                  Skills: Angular · TypeScript · React.js · HTML · JavaScript ·
+                  CSS · React Native · Git · Bootstrap (Framework)
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Programmer</h4>
+
+                <span>Nov 2018- Mar 2019</span>
+
+                <p class="timeline-text">
+                  Skills: jQuery · React.js · HTML · JavaScript · CSS · Git ·
+                  Bootstrap (Framework)
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- <section class="skill">
             <h3 class="h3 skills-title">My skills</h3>
 
             <ul class="skills-list content-card">
@@ -342,175 +530,165 @@
               </li>
             </ul>
           </section> -->
-      </article>
+        </article>
 
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>ML</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>NLP</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>
-                Select category
-              </div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>ml</button>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>nlp</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
             </ul>
-          </div>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
-                </figure>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-                <h3 class="project-title">DSM.</h3>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <p class="project-category">web development</p>
-              </a>
-            </li>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-                <h3 class="project-title">MetaSpark</h3>
+            <ul class="project-list">
+              <!-- Real projects go here -->
+            </ul>
+          </section>
+        </article>
 
-                <p class="project-category">web development</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="ml">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">ML</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="nlp">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">NLP</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required
-                data-form-input />
-            </div>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
 
-  <!--
+      <!--
+      - #CERTIFICATE MODAL
+    -->
+
+      <div class="cert-modal-container" data-cert-modal-container>
+        <div class="cert-modal-overlay" data-cert-overlay></div>
+
+        <div class="cert-modal">
+          <button class="cert-modal-close-btn" data-cert-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="cert-modal-content">
+            <h3 class="h3" data-cert-modal-title>Certificate Title</h3>
+            <p class="cert-modal-org" data-cert-modal-org>Organization</p>
+            
+            <figure class="cert-modal-img-box">
+              <img src="" alt="certificate" data-cert-modal-img />
+            </figure>
+
+            <p class="cert-modal-text">
+              Click the image above or upload your certificate image to
+              <code>./assets/images/certificates/</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
