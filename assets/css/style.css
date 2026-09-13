@@ -717,7 +717,7 @@ main {
 
 .project-tab {
   background: var(--onyx);
-  color: var(--light-gray);
+  color: var(--eerie-black);
   padding: 12px 20px;
   border-radius: 8px;
   border: none;
@@ -733,8 +733,8 @@ main {
 }
 
 .project-tab.active {
-  background: var(--orange-yellow);
-  color: var(--eerie-black);
+  /* background: var(--orange-yellow); */
+  color: var(--light-gray);
 }
 
 /**
@@ -1409,7 +1409,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, Research 
    */
 
   .project-img,
@@ -1668,7 +1668,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, Research
    */
 
   .project-img, .blog-banner-box { border-radius: 16px; }
